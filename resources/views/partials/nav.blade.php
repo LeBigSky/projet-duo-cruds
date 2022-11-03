@@ -13,7 +13,7 @@
             <div class="main-menu" id="perfect-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a href="index.html">Home</a></li>
+                        <a href="{{ route('home') }}">Home</a></li>
                     <li>
                         <a href="blog.html">Blog </a>
                     </li>
@@ -21,7 +21,7 @@
                         <a href="portfolio.html">Portfolio</a>                                
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="{{ route('contact') }}">Contact</a>
                     </li> 
                 </ul><!-- /.navbar-nav -->
             </div><!-- /.navbar-collapse -->
