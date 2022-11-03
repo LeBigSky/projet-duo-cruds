@@ -1,4 +1,3 @@
-<section>
      <div class="hero background-overlay">
     
         <div class="hero-text">
@@ -9,5 +8,3 @@
         </div><!-- /.hero-arrow -->
 
     </div><!-- /.hero --> 
-</section>
-  

@@ -1,0 +1,9 @@
+@extends('layouts.app')
+@section('content')
+@include('partials.home.header')
+@include('partials.home.cote')
+@include('partials.home.creative')
+@include('partials.home.service')
+@include('partials.home.workwithus')
+@include('partials.social')
+@endsection

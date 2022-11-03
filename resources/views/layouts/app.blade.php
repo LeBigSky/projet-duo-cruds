@@ -6,7 +6,7 @@
     ================================================== -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+   
     <title>Home | BusinessPerfect</title>
 
     <meta name="description" content="BusinessPerfect - Freebie HTML/CSS template based on Bootstrap">
@@ -42,12 +42,12 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+ {{-- @vite(['resources/js/app.js']) --}}
 </head>
 <body>
-    @include('nav')
+    @include('partials.nav')
     @yield('content')
-    @include('footer')
+    @include('partials.footer')
        <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
