@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/admin', function () {
+    return view('back.admin');
 });
 Route::get('/', [MainController::class, 'home'])->name('home');
 Route::get('/contact', [MainController::class, 'contact'])->name('contact');
