@@ -8,12 +8,11 @@
     <h2 class="d-flex justify-content-center border rounded py-2 bg-warning">Bienvenue sur votre page de réglage Blog</h2>
     <h4>voici le contenu de votre boite à messages</h4>
     <ul class="list-group list-group-light list-group-small">
-        @foreach ($articles as $article )
+        @foreach ($messages as $message )
         <li class="list-group-item d-flex gap-2"> 
-            <div><img src="{{ asset($article['img']) }}" style="max-width:100px;" alt=""></div>
-            <div><h4>{{ $article['title'] }}</h4></div>
+            <div><h4>{{ $message ['nom'] }}</h4></div>
             <div class="border border-left border-2"></div>
-            <div>{{ $article['text'] }}</div>
+            <div>{{ $message ['message'] }}</div>
         </li>
         @endforeach
       </ul>
