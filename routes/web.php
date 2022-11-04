@@ -34,3 +34,4 @@ Route::get('admin/blog', [MainController::class, 'backblog'])->name('backblog');
 Route::get('admin/blog/create', [MainController::class, 'blogcreate'])->name('blogcreate');
 Route::get('admin/projet/create', [MainController::class, 'backprojet'])->name('projetcreate');
 Route::get('admin/projet', [MainController::class, 'projet'])->name('projet');
+Route::get('admin/messages', [ContactController::class, 'message'])->name('message');

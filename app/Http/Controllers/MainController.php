@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Message;
 use App\Models\Projet;
 use Illuminate\Http\Request;
 
@@ -44,5 +45,8 @@ class MainController extends Controller
         $projets= Projet::all();
         return view('Back.pages.projetcreate', compact('projets'));
     }
-
+    public function message (){
+        $messages= Message::all();
+        return view('back.pages.message', compact('messages'));
+    }
 }
