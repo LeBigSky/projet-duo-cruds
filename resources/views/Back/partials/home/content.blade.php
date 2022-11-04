@@ -1,5 +1,10 @@
 <section class="mt-5" >
     <div class="container">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-danger my-3"><a style="text-decoration: none; color: white;" href="{{ route('home') }}"> &#x21AA;
+        LOG OUT </a></button>
+      </div>
+      
         <div class="d-flex justify-content-center p-2 my-3">
           <h1>Bienvenu dans l'espace dédié à l'adminitration de votre site</h1>  
         </div>

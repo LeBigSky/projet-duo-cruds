@@ -1,4 +1,5 @@
-<section class="mt-5">
+<section class="mt-3">
+    <button type="button" class="btn btn-warning my-3"><a style="text-decoration: none; color: black;" href="{{ route('projet') }}"> &#x21A9; STEP BACK</a></button>
     <h2 >Administrer votre blog</h2>
                 <div class="container d-flex justify-content-center gap-2 flex-column">
                     <form class="d-flex gap-2 flex-column" action="{{ route('store.projet') }}" method="POST">
@@ -30,7 +31,7 @@
                         <label for="text">entrez le texte de l'article</label>
                         <input type="text" name="text" id="text">
                     </div>
-                    <button type="submit">Ajouter le projet</button> 
+                    <button type="submit" class="btn btn-warning">Ajouter le projet</button> 
                     </form>
             </div>
 </section>
