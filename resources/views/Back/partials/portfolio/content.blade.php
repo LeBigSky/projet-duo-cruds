@@ -5,7 +5,7 @@
             <li><p>/</p></li>
             <li class="active">Port Settings</li>
         </ol><!-- /.breadcrumb -->
-    <h2 class="d-flex justify-content-center">Bienvenue sur votre page de réglage Portfolio</h2>
+    <h2 class="d-flex justify-content-center border rounded py-2 bg-warning">Bienvenue sur votre page de réglage Portfolio</h2>
 
     <h4>voici le contenu de votre portfolio</h4>
     <ul class="list-group list-group-light list-group-small">
