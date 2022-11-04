@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Projet;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -18,6 +19,7 @@ class MainController extends Controller
         return view('pages.blog', compact('articles'));
     }
     public function portfolio (){
-        return view('pages.portfolio');
+        $projets= Projet::all();
+        return view('pages.portfolio', compact('projets'));
     }
 }
