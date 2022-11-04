@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" href="{{ route('backblog') }}">SETTINGS BLOG </a>
-              <a class="nav-link" href="{{ route('backportfolio') }}">SETTINGS PORTFOLIO</a>
+              <a class="nav-link" href="{{ route('projet') }}">SETTINGS PORTFOLIO</a>
 
             </div>
           </div>

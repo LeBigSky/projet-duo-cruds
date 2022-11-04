@@ -1,16 +1,15 @@
-<section>
-    <h2>Administrer votre blog</h2>
-  
-      
+<section class="mt-5">
+    <h2 >Administrer votre blog</h2>
                 <div class="container d-flex justify-content-center gap-2 flex-column">
-                    
-                    <form class="d-flex gap-2" action="{{ route('store.projet') }}" method="POST">
+                    <form class="d-flex gap-2 flex-column" action="{{ route('store.projet') }}" method="POST">
                     @csrf
                     <div class="d-flex flex-column">
-                        <label for="title">indiquez le titre de votre projet</label>
+                        <label for="title">indiquez le titre de votre article</label>
                         <input type="text" name="title" id="title">
                     </div>
                     <div class="d-flex flex-column">
+                        <label for="img">Choisisez une image</label>
+                        <div class="d-flex flex-column">
                         <label for="img">inserez le lien de votre image</label>
                         <select name="img" id="img">
                             <option value="assets/img/portfolio-1.jpg">image 1</option>
@@ -25,12 +24,13 @@
                             <option value="assets/img/portfolio-10.jpg">image 10</option>
                         </select>
                     </div>
+            
+                    </div>
                     <div class="d-flex flex-column">
                         <label for="text">entrez le texte de l'article</label>
                         <input type="text" name="text" id="text">
                     </div>
-                    <button type="submit">Ajouter l'article</button> 
+                    <button type="submit">Ajouter le projet</button> 
                     </form>
             </div>
-        
 </section>

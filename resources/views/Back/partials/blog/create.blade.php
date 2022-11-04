@@ -1,7 +1,7 @@
-<section>
+<section class="mt-5">
     <h2>Administrer votre blog</h2>
                 <div class="container d-flex justify-content-center gap-2 flex-column">
-                    <form class="d-flex gap-2" action="{{ route('store.article') }}" method="POST">
+                    <form class="d-flex gap-2 flex-column" action="{{ route('store.article') }}" method="POST">
                     @csrf
                     <div class="d-flex flex-column">
                         <label for="title">indiquez le titre de votre article</label>
