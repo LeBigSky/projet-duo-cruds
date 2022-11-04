@@ -13,6 +13,6 @@ class ArticleController extends Controller
         $store->img = $request->img;
         $store->text = $request->text;
         $store->save();
-        return redirect()-> back();
+        return redirect()-> route('backblog');
     }
 }

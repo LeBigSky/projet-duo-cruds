@@ -7,6 +7,7 @@
         </ol><!-- /.breadcrumb -->
     <h2 class="d-flex justify-content-center border rounded py-2 bg-warning">Bienvenue sur votre page de réglage Blog</h2>
     <h4>voici le contenu de votre blog</h4>
+     <button type="button" class="btn btn-warning my-3" href="{{ route('blogcreate') }}"><a style="text-decoration: none; color: black;" href="{{ route('blogcreate') }}">CREER  &#10133;</a></button>
     <ul class="list-group list-group-light list-group-small">
         @foreach ($articles as $article )
         <li class="list-group-item d-flex gap-2"> 
@@ -17,6 +18,6 @@
         </li>
         @endforeach
       </ul>
-      <button type="button" class="btn btn-warning my-3" href="{{ route('blogcreate') }}"><a style="text-decoration: none; color: black;" href="{{ route('blogcreate') }}">CREATE</a></button>
+     
     </div>
 </section>

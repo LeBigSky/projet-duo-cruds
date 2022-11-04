@@ -30,17 +30,18 @@
 
                 <div class="site-section-small">
 
-                    <form class="form-horizontal contact-form text-right">
+                    <form class="form-horizontal contact-form text-right" action= "{{ route('store.contact') }}" method="POST">
+                        @csrf
                         <div class="row">
                             <div class="col-sm-6">
-                                <input class="form-control" type="text" name="contact-name" placeholder="Name *" required>
+                                <input class="form-control" type="text" name="nom" id="nom" placeholder="Name *" required>
                             </div>
                             <div class="col-sm-6">
-                                <input class="form-control" type="email" name="contact-email" placeholder="E-mail *" required>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="E-mail *" required>
                             </div>
                         </div>
-                        <input class="form-control" type="text" name="contact-subject" placeholder="Subject">
-                        <textarea class="form-control" placeholder="Message *" required></textarea>
+                        <input class="form-control" type="text" name="sujet" id="sujet" placeholder="Subject">
+                        <textarea class="form-control" name="message" id="message" placeholder="Message *" required></textarea>
 
                         <button class="btn btn-yellow">Submit</button>
                     </form><!-- /.contact-form -->

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProjetController;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,7 @@ Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio'
 Route::get('/admin', [MainController::class, 'admin'])->name('admin');
 Route::post('/store/article', [ArticleController::class, 'store'])->name('store.article');
 Route::post('/store/projet', [ProjetController::class, 'store'])->name('store.projet');
+Route::post('/store/message', [ContactController::class, 'store'])->name('store.contact');
 Route::get('admin/blog', [MainController::class, 'backblog'])->name('backblog');
 Route::get('admin/blog/create', [MainController::class, 'blogcreate'])->name('blogcreate');
 Route::get('admin/projet/create', [MainController::class, 'backprojet'])->name('projetcreate');

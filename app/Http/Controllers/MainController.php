@@ -33,15 +33,15 @@ class MainController extends Controller
         return view('Back.pages.blogcreate');
     }
     public function backblog (){
-        $articles= Article::take(4)->get();
+        $articles= Article::all();
         return view('Back.pages.adminblog', compact('articles'));
     }
     public function projet (){
-        $projets= Projet::take(15)->get();
+        $projets= Projet::all();
         return view('Back.pages.adminportfolio', compact('projets'));
     }
     public function backprojet (){
-        $projets= Projet::take(15)->get();
+        $projets= Projet::all();
         return view('Back.pages.projetcreate', compact('projets'));
     }
 
