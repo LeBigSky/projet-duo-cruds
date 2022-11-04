@@ -3,17 +3,17 @@
 **Par équipe deux 2 et à l'aide du template fourni, reproduire le site comme suit**
 
 ### Partie une : INTERGRATION du template
-- une navbar fonctionnelle : 
+<!-- - une navbar fonctionnelle : 
 	- nom de l'entreprise avec les variables env
 	- un onglet home qui renvoie vers la page home
 	- un onglet blog qui renvoie vers la page blog
 	- un onglet portfolio qui renvoie vers la page portfolio
-	- un onglet contact qui renvoie vers la page contact
-
+	- un onglet contact qui renvoie vers la page contact -->
+<!-- 
 - La page home : 
-	- tout le contenu doit être présent avec le stystème de partial. (ne pas mettre les données dans la DB)
+	- tout le contenu doit être présent avec le stystème de partial. (ne pas mettre les données dans la DB) -->
 
-- la page blog :
+<!-- - la page blog :
 	- il doit y avoir maximum 4 articles affichés
 	- le contenu des articles doit être rajouté manuellement dans votre DB
 		- le titre sera en string, limité à 30 caractères
@@ -29,7 +29,7 @@
 	- la garder telle quelle
 
 - le footer
-	- le garder tel quel
+	- le garder tel quel -->
 
 
 

@@ -1,4 +1,4 @@
 @extends('layouts.main')
 @section('content')
-@include('Back.partials.article')
+@include('Back.partials.home.content')
 @endsection

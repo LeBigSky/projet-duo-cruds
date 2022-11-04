@@ -15,11 +15,21 @@ class MainController extends Controller
         return view('pages.contact');
     }
     public function blog (){
-        $articles= Article::all();
+        $articles= Article::take(4)->get();
         return view('pages.blog', compact('articles'));
     }
     public function portfolio (){
-        $projets= Projet::all();
+        $projets= Projet::take(15)->get();
         return view('pages.portfolio', compact('projets'));
+    }
+
+    /* FUNCTION BACK-END*/
+    public function admin (){
+        
+        return view('Back.adminhome');
+    }
+    public function backblog (){
+        $articles= Article::take(4)->get();
+        return view('Back.pages.adminblog', compact('articles'));
     }
 }
