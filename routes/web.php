@@ -21,3 +21,5 @@ Route::get('/admin', function () {
 Route::get('/', [MainController::class, 'home'])->name('home');
 Route::get('/contact', [MainController::class, 'contact'])->name('contact');
 Route::post('/store.article', [ArticleController::class, 'store'])->name('store.article');
+Route::get('/blog', [MainController::class, 'blog'])->name('blog');
+Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
