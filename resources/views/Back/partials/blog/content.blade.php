@@ -12,6 +12,7 @@
         <li class="list-group-item d-flex gap-2"> 
             <div><img src="{{ asset($article['img']) }}" style="max-width:100px;" alt=""></div>
             <div><h4>{{ $article['title'] }}</h4></div>
+            <div class="border border-left border-2"></div>
             <div>{{ $article['text'] }}</div>
         </li>
         @endforeach
