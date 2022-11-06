@@ -15,6 +15,7 @@
             <div><h4>{{ $article['title'] }}</h4></div>
             <div class="border border-left border-2"></div>
             <div>{{ $article['text'] }}</div>
+            <div><Button>DELETE</Button></div>
         </li>
         @endforeach
       </ul>

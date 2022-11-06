@@ -15,4 +15,10 @@ class ArticleController extends Controller
         $store->save();
         return redirect()-> route('backblog');
     }
+    public function delete($item){
+        $articles= Article::find($item);
+        // dd($item);
+       $articles= $articles->delete();
+        return redirect()-> route ('backblog');
+    }
 }
