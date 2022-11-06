@@ -16,9 +16,9 @@ class ArticleController extends Controller
         return redirect()-> route('backblog');
     }
     public function delete($item){
-        $articles= Article::find($item);
-        // dd($item);
-       $articles= $articles->delete();
+        $article= Article::find($item);
+        dd($article);
+    //    $article->delete();
         return redirect()-> route ('backblog');
     }
 }
