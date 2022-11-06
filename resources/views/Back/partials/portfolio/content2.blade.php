@@ -6,7 +6,7 @@
             <li class="active">Réglages Blog</li>
         </ol>
     
-        <h2 class="d-flex justify-content-center border rounded py-2 bg-warning">Bienvenue sur votre page de réglage Blog</h2>
+        <h2 class="d-flex justify-content-center border rounded py-2 bg-warning">Bienvenue sur votre page de réglage Portfolio</h2>
         <h4>voici le contenu de votre blog</h4>
          <button type="button" class="btn btn-warning my-3" href="{{ route('blogcreate') }}"><a style="text-decoration: none; color: black;" href="{{ route('blogcreate') }}">CREER  &#10133;</a></button>
     
@@ -20,20 +20,20 @@
               </tr>
             </thead>
             <tbody>
-                @foreach ($articles as $article ) 
+                @foreach ($projets as $projet ) 
               <tr>
                 <td>
                   <div class="d-flex align-items-center">
-                    <img src="{{ asset($article['img']) }}" style="max-width:100px;" alt="">
+                    <img src="{{ asset($projet['img']) }}" style="max-width:100px;" alt="">
                   </div>
                 </td>
                 <td>
-                    <p style="font-weight:bold;">{{ $article['title'] }}</p>
+                    <p style="font-weight:bold;">{{ $projet['title'] }}</p>
                 </td>
-                <td><p>{{ $article['text'] }}</p></td>
+                <td><p>{{ $projet['text'] }}</p></td>
                 <td>
                   <button type="button" class="btn btn-warning">
-                    <a href={{ "delete/".$article['Id'] }}>DELETE</a>
+                    <a href={{ "delete/".$projet['id'] }}>DELETE</a>
                   </button>
                 </td>
               </tr>
@@ -41,5 +41,4 @@
             </tbody>
           </table>
     </div>
-    
 </section>

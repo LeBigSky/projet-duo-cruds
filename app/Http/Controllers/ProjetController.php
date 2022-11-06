@@ -15,4 +15,10 @@ class ProjetController extends Controller
         $store->save();
         return redirect()-> route('projet');
     }
+    public function delete ($item){
+        $projet= Projet::find($item);
+        $projet->delete();
+        return redirect()-> route ('projet');
+    }
+
 }

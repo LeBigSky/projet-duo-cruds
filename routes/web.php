@@ -35,4 +35,7 @@ Route::get('admin/blog/create', [MainController::class, 'blogcreate'])->name('bl
 Route::get('admin/projet/create', [MainController::class, 'backprojet'])->name('projetcreate');
 Route::get('admin/projet', [MainController::class, 'projet'])->name('projet');
 Route::get('admin/messages', [MainController::class, 'message'])->name('message');
+
+/*DELETE ADMIN*/
 Route::get('admin/delete/{item}', [ArticleController::class, 'delete']);
+Route::get('admin/delete/{item}', [ProjetController::class, 'delete']);
