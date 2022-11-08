@@ -39,3 +39,6 @@ Route::get('admin/messages', [MainController::class, 'message'])->name('message'
 /*DELETE ADMIN*/
 Route::get('admin/delete/{item}', [ArticleController::class, 'delete']);
 Route::get('admin/delete/{item}', [ProjetController::class, 'delete']);
+
+/* Method Show*/
+Route::get('admin/article/{id}', [ArticleController::class, 'show'])->name('article.show');

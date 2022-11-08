@@ -21,4 +21,8 @@ class ArticleController extends Controller
        $article->delete();
         return redirect()-> route ('backblog');
     }
+    public function show ($id){
+        $article= Article::find($id);
+        return view('Back.pages.adminshow', compact('article'));
+    }
 }
