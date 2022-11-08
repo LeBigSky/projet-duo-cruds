@@ -16,6 +16,7 @@
                 <th>IMAGE</th>
                 <th>TITRE</th>
                 <th>CONTENU</th>
+                <th>AFFICHER</th>
                 <th>SUPPRIMER</th>
               </tr>
             </thead>
@@ -32,13 +33,13 @@
                 </td>
                 <td><p>{{ $article['text'] }}</p></td>
                 <td>
-                  <button type="button" class="btn btn-warning">
-                    <a href={{ "article/".$article['id'] }}>Show</a>
+                  <button type="button" class="btn btn-info">
+                    <a class="text-white" style="text-decoration: none" href={{ "article/".$article['id'] }}>Show</a>
                   </button>
                 </td>
                 <td>
-                  <button type="button" class="btn btn-warning">
-                    <a href={{ "delete/".$article['id'] }}>DELETE</a>
+                  <button type="button" class="btn btn-danger">
+                    <a class="text-white" style="text-decoration: none" href={{ "delete/".$article['id'] }}>DELETE</a>
                   </button>
                 </td>
               </tr>
