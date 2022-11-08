@@ -26,4 +26,16 @@ class ArticleController extends Controller
         $article= Article::find($id);
         return view('Back.pages.adminshow', compact('article'));
     }
+    public function edit ($id){
+        $article= Article::find($id);
+        return view('Back.pages.editarticle', compact('article'));
+    }
+    public function update (Request $request, $id){
+        $update= Article::find($id);
+        $update->title = $request->title;
+        $update->img = $request->img;
+        $update->text = $request->text;
+        $update->save();
+        return redirect()-> route('backblog');
+    }
 }

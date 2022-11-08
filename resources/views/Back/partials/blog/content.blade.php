@@ -17,6 +17,7 @@
                 <th>TITRE</th>
                 <th>CONTENU</th>
                 <th>AFFICHER</th>
+                <th>EDITER</th>
                 <th>SUPPRIMER</th>
               </tr>
             </thead>
@@ -35,6 +36,11 @@
                 <td>
                   <button type="button" class="btn btn-info">
                     <a class="text-white" style="text-decoration: none" href={{ "article/".$article['id'] }}>Show</a>
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-primary">
+                    <a class="text-white" style="text-decoration: none" href="/edit/{{ $article['id'] }}">Edit</a>
                   </button>
                 </td>
                 <td>

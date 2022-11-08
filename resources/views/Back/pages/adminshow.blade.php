@@ -23,5 +23,6 @@
         <img src="{{ asset($article['img']) }}" alt="" class="img-fluid">
         <p class="d-flex justify-content-center" style= "text-align: center" >{{ $article['text'] }}</p>
     </div>
+   
 </div>
 @endsection
