@@ -33,6 +33,11 @@
                 <td><p>{{ $projet['text'] }}</p></td>
                 <td>
                   <button type="button" class="btn btn-warning">
+                    <a href={{ "projet/".$projet['id'] }}>SHOW</a>
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-warning">
                     <a href={{ "delete/".$projet['id'] }}>DELETE</a>
                   </button>
                 </td>

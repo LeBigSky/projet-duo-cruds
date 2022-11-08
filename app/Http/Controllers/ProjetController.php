@@ -20,5 +20,9 @@ class ProjetController extends Controller
         $projet->delete();
         return redirect()-> route ('projet');
     }
+    public function show ($id){
+        $projet= Projet::find($id);
+        return view('Back.pages.adminshowfolio', compact('projet'));
+    }
 
 }

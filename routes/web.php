@@ -42,3 +42,4 @@ Route::get('admin/delete/{item}', [ProjetController::class, 'delete']);
 
 /* Method Show*/
 Route::get('admin/article/{id}', [ArticleController::class, 'show'])->name('article.show');
+Route::get('admin/projet/{id}', [ProjetController::class, 'show'])->name('projet.show');
