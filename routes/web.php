@@ -45,8 +45,8 @@ Route::get('admin/article/{id}', [ArticleController::class, 'show'])->name('arti
 Route::get('admin/projet/{id}', [ProjetController::class, 'show'])->name('projet.show');
 
 /* Update */
-Route::get('edit/{id}', [ArticleController::class, 'edit']);
-Route::post('update/{id}', [ArticleController::class, 'update']);
+Route::get('/blog/edit/{id}', [ArticleController::class, 'edit']);
+Route::post('/blog/update/{id}', [ArticleController::class, 'update']);
 
 Route::get('edit/{id}', [ProjetController::class, 'edit']);
 Route::post('update/{id}', [ProjetController::class, 'update']);

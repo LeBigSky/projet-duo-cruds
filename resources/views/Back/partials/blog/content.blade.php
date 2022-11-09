@@ -40,7 +40,7 @@
                 </td>
                 <td>
                   <button type="button" class="btn btn-primary">
-                    <a class="text-white" style="text-decoration: none" href="/edit/{{ $article['id'] }}">Edit</a>
+                    <a class="text-white" style="text-decoration: none" href="/blog/edit/{{ $article['id'] }}">Edit</a>
                   </button>
                 </td>
                 <td>
